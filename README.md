@@ -1,11 +1,7 @@
----
-
 # 📚 Book Finder
 
 A full-stack web application that lets users **search books from the Open Library API**, view details, and save favorites.
 Built with **React + Tailwind (frontend)** and **Node.js + Express (backend)**.
-
----
 
 ## ✨ Features
 
@@ -16,8 +12,6 @@ Built with **React + Tailwind (frontend)** and **Node.js + Express (backend)**.
 * 🗑️ **Remove favorites** anytime
 * 🌙 **Light/Dark theme toggle** with persistent preference
 * ⚡ **Responsive UI** with Tailwind CSS
-
----
 
 ## 🛠️ Tech Stack
 
@@ -37,8 +31,6 @@ Built with **React + Tailwind (frontend)** and **Node.js + Express (backend)**.
 
 * [Open Library Search API](https://openlibrary.org/developers/api)
 
----
-
 ## 📂 Project Structure
 
 ```
@@ -57,8 +49,6 @@ book-finder/
 │
 └── README.md
 ```
-
----
 
 ## 🚀 Getting Started
 
@@ -95,15 +85,11 @@ npm install
 npm run dev   # starts on http://localhost:3000
 ```
 
----
-
 ## 🌙 Light / Dark Mode
 
 * Default is **light theme**
 * Toggle between 🌞 and 🌙 using the button in the header
 * Preference is saved in `localStorage`
-
----
 
 ## 📦 API Endpoints (Backend)
 
@@ -114,10 +100,6 @@ npm run dev   # starts on http://localhost:3000
 | POST   | `/api/favorites`     | Save a new favorite           |
 | DELETE | `/api/favorites/:id` | Remove a favorite by book key |
 
----
-
 ## 📜 License
 
 This project is licensed under the MIT License — feel free to use and modify.
-
----
