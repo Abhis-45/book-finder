@@ -84,8 +84,10 @@ const [theme, setTheme] = useState(() => {
       });
       if (res.ok) {
         await fetchFavorites();
+        alert('Added to favorites');
       } else {
         const e = await res.json();
+        alert(e.error || 'Could not add');
       }
     } catch (e) {
       console.error('add favorite error', e);
