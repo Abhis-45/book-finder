@@ -1,6 +1,3 @@
-Got it ✅ — here’s a polished **README.md** for your **Book Finder** project.
-I included sections for overview, features, tech stack, setup, usage, and screenshots. You can copy this into your `README.md` file.
-
 ---
 
 # 📚 Book Finder
