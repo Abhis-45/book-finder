@@ -121,5 +121,3 @@ npm run dev   # starts on http://localhost:3000
 This project is licensed under the MIT License — feel free to use and modify.
 
 ---
-
-Do you want me to also **add this README.md into the `setup.sh` script**, so when you generate the project it comes with this prefilled README?
