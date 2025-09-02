@@ -20,7 +20,7 @@ export default function App() {
 
   const fetchFavorites = async () => {
     try {
-      const res = await fetch('/api/favorites');
+      const res = await fetch('https://book-finder-api.vercel.app/api/favorites');
       const data = await res.json();
       setFavorites(data);
     } catch (e) {
@@ -47,7 +47,7 @@ const [theme, setTheme] = useState(() => {
     }
     setLoading(true);
     try {
-      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&page=${pg}`);
+      const res = await fetch(`https://book-finder-api.vercel.app/api/search?q=${encodeURIComponent(q)}&page=${pg}`);
       const data = await res.json();
       setResults(data.docs || []);
       setNumFound(data.numFound || 0);
@@ -77,7 +77,7 @@ const [theme, setTheme] = useState(() => {
 
   const addFavorite = async (book) => {
     try {
-      const res = await fetch('/api/favorites', {
+      const res = await fetch('https://book-finder-api.vercel.app/api/favorites', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(book)
@@ -98,7 +98,7 @@ const [theme, setTheme] = useState(() => {
   const removeFavorite = async (key) => {
     if (!confirm('Remove from favorites?')) return;
     try {
-      const res = await fetch(`/api/favorites/${encodeURIComponent(key)}`, { method: 'DELETE' });
+      const res = await fetch(`https://book-finder-api.vercel.app/api/favorites/${encodeURIComponent(key)}`, { method: 'DELETE' });
       if (res.ok) await fetchFavorites();
       else alert('Failed to remove');
     } catch (e) {
