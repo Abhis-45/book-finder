@@ -3,6 +3,8 @@
 A full-stack web application that lets users **search books from the Open Library API**, view details, and save favorites.
 Built with **React + Tailwind (frontend)** and **Node.js + Express (backend)**.
 
+### Live Demo - https://book-finder-ui-sooty.vercel.app/
+
 ## ✨ Features
 
 * 🔍 **Search** books by title using the Open Library API
